@@ -20,7 +20,10 @@ body {
 }
 
 
-
+.page-container p,
+.page-container li {
+  line-height: 1.7;
+}
 
 /* Get Games button styling*/
 .get-games-button {

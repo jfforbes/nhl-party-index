@@ -1,6 +1,6 @@
 from app.utils import get_player_age_on_gameday, get_away_player_ages_for_game, get_days_from_last_game_for_away_team
 from app.party_index import get_ypr_for_away_team, get_party_index
-from app.db import get_all_game_dates_for_team, get_game_for_game_id_from_db, get_games_from_date, get_player_age_on_gameday_from_db, get_all_game_dates_from_db, get_all_games_for_team_from_db, get_all_teams_from_db
+from app.db import get_all_game_dates_for_team, get_game_for_game_id_from_db, get_games_from_date, get_player_age_on_gameday_from_db, get_all_game_dates_from_db, get_all_games_for_team_from_db, get_all_teams_from_db, get_away_games_for_team_from_db
 from app.nhl_api import fetch_all_games_for_season, fetch_all_team_abbrs, fetch_boxscore, fetch_player_stats, fetch_player_birthdate
 
 from fastapi import FastAPI  # Import the FastAPI class from the fastapi library
@@ -31,7 +31,7 @@ def test_party_index(date: str):
 
 @app.get("/get-party-index-for-team/{team_abbrev}/{season}")
 def get_party_index_for_team(team_abbrev: str, season: str):
-    games = get_all_games_for_team_from_db(team_abbrev, season)
+    games = get_away_games_for_team_from_db(team_abbrev, season)
     party_indexes = []
     for game in games:
         party_indexes.append(get_party_index(game["id"]))

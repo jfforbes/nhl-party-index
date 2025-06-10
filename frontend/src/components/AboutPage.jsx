@@ -25,8 +25,16 @@ function AboutPage() {
         <li>
           Data is fetched from the <strong>NHL public API</strong> and processed with custom logic to generate the Party Index.
         </li>
+        <li>
+            I also have to be honest, this was heavily assisted by AI, specifically <strong>GitHub Copilot</strong>
+        </li>
       </ul>
-
+        <h1 className="page-title">Known caveats</h1>
+        <p>There are some known caveats with this model that I will be trying to bubble up to the surface</p>
+        <ol>
+            <li>The formula doesn't take into account good home teams (or bad away teams). I have the backend setup to get away/home/season records, but haven't figured out how to implement it yet</li>
+            <li>Younger teams just tend to be worse. I haven't figured out how to accommodate for this yet.</li>
+        </ol>
  
     </div>
   );
