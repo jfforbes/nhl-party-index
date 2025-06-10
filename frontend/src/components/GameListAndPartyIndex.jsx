@@ -2,7 +2,10 @@ import { use, useEffect, useState } from "react";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 
-const API_BASE = "https://nhl-party-index.onrender.com"
+const API_BASE = 
+  process.env.NODE_ENV === "production"
+  ? "https://nhl-party-index.onrender.com"
+  : ""
 
 function GameListAndPartyIndex() {
   const [date, setDate] = useState(new Date("2024-04-18"));

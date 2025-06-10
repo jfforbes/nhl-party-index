@@ -2,6 +2,7 @@ import { HashRouter as Router, Routes, Route} from "react-router-dom"
 import GameListAndPartyIndex from "./components/GameListAndPartyIndex";
 import AboutPage from "./components/AboutPage";
 import HeaderBar from "./components/HeaderBar";
+import PartyIndexByTeam from "./components/PartyIndexByTeam";
 import "./App.css";
 import "./DatePickerOverrides.css"
 import "./responsive.css"
@@ -19,8 +20,9 @@ function App() {
         <HeaderBar />
         <Routes>
           <Route path="calculating" element={<CalculatingThePartyIndex />} />
-          <Route path="nhl-party-index" element={<GameListAndPartyIndex />} />
+          <Route path="party-index-date" element={<GameListAndPartyIndex />} />
           <Route path="about" element={<AboutPage />} />
+          <Route path="party-index-team" element={<PartyIndexByTeam />} />
         </Routes>
       </div>
     </Router>

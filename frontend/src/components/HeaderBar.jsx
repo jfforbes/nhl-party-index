@@ -17,7 +17,10 @@ function HeaderBar() {
                         <Link to="calculating">Calculating The Party Index</Link>
                     </li>
                     <li>
-                        <Link to="nhl-party-index">See The Party Index in Action</Link>
+                        <Link to="party-index-date">Look up Party Index by Date</Link>
+                    </li>
+                    <li>
+                        <Link to="party-index-team">Look up Party Index by Team/Season</Link>
                     </li>
                     <li>
                         <Link to="about">About</Link>

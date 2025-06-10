@@ -248,7 +248,7 @@ def get_game_for_game_id_from_db(game_id):
         "homeTeam_score": row[17]
     }
     
-def get_all_games_for_team_from_db(team_id, season):
+def get_all_games_for_team_from_db(team_abbrev, season):
     conn = sqlite3.connect('nhl_schedule.db')
     c = conn.cursor()
     c.execute('''
@@ -256,8 +256,8 @@ def get_all_games_for_team_from_db(team_id, season):
                easternUTCOffset, venueUTCOffset, venueTimezone, gameState, gameScheduleState,
                awayTeam_id, awayTeam_abbrev, awayTeam_score,
                homeTeam_id, homeTeam_abbrev, homeTeam_score
-        FROM games WHERE (awayTeam_id = ? OR homeTeam_id = ?) AND season = ?
-    ''', (team_id, team_id, season,))
+        FROM games WHERE (awayTeam_abbrev = ? OR homeTeam_abbrev = ?) AND season = ?
+    ''', (team_abbrev, team_abbrev, season,))
     rows = c.fetchall()
     conn.close()
     games = []

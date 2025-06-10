@@ -22,10 +22,12 @@ function CalculatingThePartyIndex() {
             </li>
         </ul>
         <p>
-            <strong>Formula:</strong> <br />
-            <span style={{ fontFamily: "monospace", background: "#181c23", padding: "0.2em 0.5em", borderRadius: "4px" }}>
-            Party Index = (YPR) × (City Score) × (Rest Modifier)
-            </span>
+            <div className="page-section">
+                <strong>Formula:</strong> <br />
+                <span style={{ fontFamily: "monospace", background: "#181c23", padding: "0.2em 0.5em", borderRadius: "4px" }}>
+                Party Index = (YPR) × (City Score) × (Rest Modifier)
+                </span>
+            </div>
         </p>
         <ul>
             <li>

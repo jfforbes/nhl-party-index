@@ -70,6 +70,7 @@ body {
   box-shadow: 0 0 8px #22c55e55;
   padding: 0.5em;
   color: #D1D7DB;
+  animation: pulse-green 3s infinite ease-in-out;
 }
 
 /* Green box for the party index */
@@ -80,4 +81,30 @@ body {
   color: #000000;
   box-shadow: 0 0 8px #22c55e55;
   padding: 0.5em;
+}
+
+/* Two columns for long list */
+
+.party-index-results-box {
+  background: #23272f;
+  border-radius: 14px;
+  box-shadow: 0 4px 16px #0002;
+  padding: 1.5em 1em;
+  margin: 2em auto;
+  max-width: 900px;
+}
+
+.games-list.two-columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1em;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+@media (max-width: 700px) {
+  .games-list.two-columns {
+    grid-template-columns: 1fr;
+  }
 }
