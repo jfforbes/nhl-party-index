@@ -1,0 +1,59 @@
+.header-bar-outer {
+  width: 100%;
+  margin-bottom: 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header-bar {
+  width: 100%;
+  background: #181c23;
+  box-shadow: 0 2px 8px #0003; 
+  padding: 0.5em 0 0.5em 0;
+  display: flex;
+  justify-content: center;
+}
+
+.header-bar ul {
+  display: flex;
+  justify-content: center;
+  gap: 2em;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.header-bar a {
+  color: #D1D7DB;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition: color 0.2s;
+}
+.header-bar a:hover {
+  color: #60a5fa;
+}
+
+.header-title-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1.5em 0 0.5em 0;
+}
+
+.page-header {
+  font-family: 'HeaderFont', sans-serif;
+  font-size: 2.5rem;
+  margin: 0;
+  color: #D1D7DB;
+  text-align: center;
+}
+
+.page-subheader {
+  color: #95A3AE;
+  text-align: center;
+  font-size: 1.15rem;
+  font-weight: 500;
+  max-width: 900px;
+}

@@ -1,0 +1,83 @@
+/* import fonts */
+@font-face {
+  font-family: 'HeaderFont';
+  src: url('./fonts/CAMagicHour-Regular.woff') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    color: #8394A1;
+    background: #000000;
+}
+
+.app-center {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+
+
+/* Get Games button styling*/
+.get-games-button {
+  margin-top: 0.5em;
+  font-family: 'HeaderFont', Arial, sans-serif;
+  font-size: 1.1rem;
+  font-weight: 500;
+  border: 1.5px solid #95A3AE;
+  border-radius: 6px;
+  background-color: #D1D7DB;
+  padding: 0.5em 1.5em;
+  cursor: pointer;
+  transition: background 0.2s, box-shadow 0.2s;
+}
+
+.get-games-button:hover:enabled {
+  background-color: #95A3AE;
+  box-shadow: 0 4px 16px rgba(59, 130, 246, 0.15);
+}
+
+.get-games-button:disabled {
+  background-color: #748896;
+  color: #D1D7DB;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+/* Games list styling */
+.games-list {
+  align-items: center;
+  text-align: center;
+  list-style: none;
+  margin: 1em 0;
+  padding: 0;
+}
+
+.games-list-item {
+  color: #D1D7DB;
+  padding: 0.5em;
+}
+
+/* Green box for the party index */
+.high-pi-away-loss {
+  border: 2px solid #22c55e;
+  border-radius: 8px;
+  background-color: #203a20;
+  box-shadow: 0 0 8px #22c55e55;
+  padding: 0.5em;
+  color: #D1D7DB;
+}
+
+/* Green box for the party index */
+.low-pi-away-win {
+  border: 2px solid #fff200;
+  border-radius: 8px;
+  background-color: #c4a701;
+  color: #000000;
+  box-shadow: 0 0 8px #22c55e55;
+  padding: 0.5em;
+}
