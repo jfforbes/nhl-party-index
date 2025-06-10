@@ -40,9 +40,9 @@ function GameListAndPartyIndex() {
   };
 
   return (
-    <div>
+    <div className="page-container">
       <div className="party-index-how-to">
-        <h2 style={{ color: "#D1D7DB", fontSize: "1.3rem", marginBottom: "0.5em" }}>How to Use This</h2>
+        <h1 className="page-title">How to Use This</h1>
           <ul style={{ color: "#D1D7DB", maxWidth: 700, margin: "0 auto 1.5em auto", fontSize: "1.05rem" }}>
             <li>Select a date using the date picker above.</li>
             <li>Click <b>Get Games</b> to view all NHL games for that day.</li>

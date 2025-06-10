@@ -1,0 +1,39 @@
+.page-container {
+  max-width: 800px;
+  margin: 2em auto;
+  padding: 1.5em;
+  background: #23272f;
+  border-radius: 16px;
+  box-shadow: 0 4px 16px #0002;
+  color: #D1D7DB;
+}
+
+.page-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 1em;
+  color: #60a5fa;
+}
+
+.page-section {
+  background: #181c23;
+  border-radius: 12px;
+  padding: 1em 1.5em;
+  margin-bottom: 1.5em;
+  box-shadow: 0 2px 8px #0003;
+}
+
+.page-section-title {
+  font-size: 1.2rem;
+  margin-bottom: 0.5em;
+  color: #95A3AE;
+}
+
+@media (max-width: 700px) {
+  .page-container {
+    padding: 0.5em;
+  }
+  .page-section {
+    padding: 0.7em 0.5em;
+  }
+}

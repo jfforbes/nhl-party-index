@@ -1,10 +1,11 @@
 import React from "react";
 import "../App.css";
+import "../pages.css"
 
 function AboutPage() {
   return (
-    <section className="about-section">
-      <h2 className="about-header">How This Was Made</h2>
+    <div className="page-container">
+      <h1 className="page-title">How This Was Made</h1>
       <p>
         This project was built by James Forbes as a coding exercise to dive head-first into a variety of web technologies. 
       </p>
@@ -27,7 +28,7 @@ function AboutPage() {
       </ul>
 
  
-    </section>
+    </div>
   );
 }
 
