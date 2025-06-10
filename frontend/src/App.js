@@ -18,7 +18,7 @@ function App() {
       <div className="app-center">
         <HeaderBar />
         <Routes>
-          <Route path="/" element={<CalculatingThePartyIndex />} />
+          <Route path="/calculating" element={<CalculatingThePartyIndex />} />
           <Route path="/party-index" element={<GameListAndPartyIndex/>} />
           <Route path="/about" element={<AboutPage />} />
         </Routes>

@@ -2,6 +2,8 @@ import { use, useEffect, useState } from "react";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 
+const API_BASE = "https://nhl-party-index.onrender.com"
+
 function GameListAndPartyIndex() {
   const [date, setDate] = useState(new Date("2024-04-18"));
   const [games, setGames] = useState([]);
@@ -24,7 +26,7 @@ function GameListAndPartyIndex() {
     setGames([]);
     try{
       const isoDate = date.toISOString().slice(0, 10); // YYYY-MM-DD
-      const res = await fetch(`/get-party-index-for-games/${isoDate}`);
+      const res = await fetch(`${API_BASE}/get-party-index-for-games/${isoDate}`);
       if (!res.ok) throw new Error("Failed to fetch games")
       const data = await res.json();
       setGames(data);

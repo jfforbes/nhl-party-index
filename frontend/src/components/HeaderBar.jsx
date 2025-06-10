@@ -14,7 +14,7 @@ function HeaderBar() {
             <nav className="header-bar">
                 <ul>
                     <li>
-                        <Link to="/">Calculating The Party Index</Link>
+                        <Link to="/calculating">Calculating The Party Index</Link>
                     </li>
                     <li>
                         <Link to="/party-index">See The Party Index in Action</Link>

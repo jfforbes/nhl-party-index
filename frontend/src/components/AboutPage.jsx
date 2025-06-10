@@ -19,6 +19,9 @@ function AboutPage() {
           The backend is powered by <strong>Python</strong> and <strong>FastAPI</strong>, with <strong>SQLite</strong> as the database.
         </li>
         <li>
+            It is hosted on <strong>Github Pages</strong> pages with the backend hosted in <strong>Render</strong>
+        </li>
+        <li>
           Data is fetched from the <strong>NHL public API</strong> and processed with custom logic to generate the Party Index.
         </li>
       </ul>
