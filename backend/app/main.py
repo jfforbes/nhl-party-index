@@ -4,8 +4,18 @@ from app.db import get_all_game_dates_for_team, get_game_for_game_id_from_db, ge
 from app.nhl_api import fetch_all_games_for_season, fetch_all_team_abbrs, fetch_boxscore, fetch_player_stats, fetch_player_birthdate
 
 from fastapi import FastAPI  # Import the FastAPI class from the fastapi library
+from fastapi.middleware.cors import CORSMiddleware
 
 app = FastAPI()  # Create an instance of the FastAPI application
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["https://jfforbes.github.io"],  # or ["*"] for testing
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+
 
 def read_root():
     # Return a simple JSON response as a Python dictionary
