@@ -12,7 +12,7 @@ function GameListAndPartyIndex() {
   const [validDates, setValidDates] = useState([]);
 
   useEffect(() => {
-    fetch("/get-all-game-dates")
+    fetch(`${API_BASE}/get-all-game-dates`)
     .then(res => res.json())
     .then(data => {
       setValidDates(data.map(d => new Date(d)));
