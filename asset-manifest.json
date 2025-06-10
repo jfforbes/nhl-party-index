@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/nhl-party-index/static/css/main.a51b9918.css",
-    "main.js": "/nhl-party-index/static/js/main.8b7d5747.js",
+    "main.js": "/nhl-party-index/static/js/main.802463f2.js",
     "static/media/CAMagicHour-Regular.woff": "/nhl-party-index/static/media/CAMagicHour-Regular.8f714b1add592c701d02.woff",
     "index.html": "/nhl-party-index/index.html",
     "main.a51b9918.css.map": "/nhl-party-index/static/css/main.a51b9918.css.map",
-    "main.8b7d5747.js.map": "/nhl-party-index/static/js/main.8b7d5747.js.map"
+    "main.802463f2.js.map": "/nhl-party-index/static/js/main.802463f2.js.map"
   },
   "entrypoints": [
     "static/css/main.a51b9918.css",
-    "static/js/main.8b7d5747.js"
+    "static/js/main.802463f2.js"
   ]
 }
