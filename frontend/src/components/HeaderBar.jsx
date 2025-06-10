@@ -14,13 +14,13 @@ function HeaderBar() {
             <nav className="header-bar">
                 <ul>
                     <li>
-                        <Link to="/calculating">Calculating The Party Index</Link>
+                        <Link to="calculating">Calculating The Party Index</Link>
                     </li>
                     <li>
-                        <Link to="/party-index">See The Party Index in Action</Link>
+                        <Link to="nhl-party-index">See The Party Index in Action</Link>
                     </li>
                     <li>
-                        <Link to="/about">About</Link>
+                        <Link to="about">About</Link>
                     </li>
                 </ul>
             </nav>

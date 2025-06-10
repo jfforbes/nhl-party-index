@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route} from "react-router-dom"
+import { HashRouter as Router, Routes, Route} from "react-router-dom"
 import GameListAndPartyIndex from "./components/GameListAndPartyIndex";
 import AboutPage from "./components/AboutPage";
 import HeaderBar from "./components/HeaderBar";
@@ -18,9 +18,9 @@ function App() {
       <div className="app-center">
         <HeaderBar />
         <Routes>
-          <Route path="/calculating" element={<CalculatingThePartyIndex />} />
-          <Route path="/party-index" element={<GameListAndPartyIndex/>} />
-          <Route path="/about" element={<AboutPage />} />
+          <Route path="calculating" element={<CalculatingThePartyIndex />} />
+          <Route path="nhl-party-index" element={<GameListAndPartyIndex />} />
+          <Route path="about" element={<AboutPage />} />
         </Routes>
       </div>
     </Router>
