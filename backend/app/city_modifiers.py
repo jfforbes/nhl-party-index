@@ -11,7 +11,7 @@ city_modifiers = {
     "BOS": 5.5,   # Boston Bruins
     "VAN": 5.0,   # Vancouver Canucks
     "TBL": 5.0,   # Tampa Bay Lightning
-    "SJS": 5.0,   # San Jose Sharks
+    "SJS": 3.5,   # San Jose Sharks
     "DAL": 5.0,   # Dallas Stars
     "SEA": 5.0,   # Seattle Kraken
     "CGY": 4.5,   # Calgary Flames

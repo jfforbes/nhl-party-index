@@ -57,6 +57,7 @@ function GameListAndPartyIndex() {
               </ul>
             </li>
             <li>Right now, the Party Index only works for the 2017/2018 - 2023/2024 seasons</li>
+            <li>To keep costs low, this might take a second to load. Just be patient! I swear it works!</li>
           </ul>
       </div>
       <div className="datepicker-wrapper">
